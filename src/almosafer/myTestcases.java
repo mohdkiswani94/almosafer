@@ -23,7 +23,7 @@ public class myTestcases {
 	String ExpectedLanaguge = "en";
 	String ExpectedCurrency = "SAR";
 	String ExpectedContactNum = "+966554400000";
-    boolean ExpectedQitafLogoIsThere = true;
+	boolean ExpectedQitafLogoIsThere = true;
 
 	@BeforeTest
 
@@ -72,8 +72,9 @@ public class myTestcases {
 	@Test
 	public void CheckQitafLogoIfDisplayed() {
 		WebElement FooterTag = driver.findElement(By.tagName("footer"));
-		boolean ActualQitaflogo = FooterTag.findElement(By.xpath("//svg[@data-testid='Footer__QitafLogo']")).isDisplayed();
-			
+		boolean ActualQitaflogo = FooterTag.findElement(By.xpath("//svg[@data-testid='Footer__QitafLogo']"))
+				.isDisplayed();
+
 		org.testng.Assert.assertEquals(ActualQitaflogo, ExpectedQitafLogoIsThere);
 	}
 
