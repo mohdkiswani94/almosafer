@@ -6,7 +6,7 @@
       <class name="almosafer.myTestcases">
         <methods>
           <include name="mySetup"/>
-          <include name="CheckQitafLogoIfDisplayed"/>
+          <include name="SortItemsPriceLowToHigh"/>
         </methods>
       </class> <!-- almosafer.myTestcases -->
     </classes>
